@@ -25,7 +25,7 @@ This repository contains an example application for learning about the Heroku ap
 
 4. Run `express --view=ejs aws-devops-heroku-example` to generate an Express project.
 
-5. Update the express project. Move `./www/bin` to `./index.js` and change the line `var app = require("../app")` to `var app = require("./app")`.
+5. Update the express project. Move `./www/bin` to `./app.js` and change the line `var app = require("../app")` to `var app = require("./app")`.
 
 6. Run `heroko login` to login to Heroku and `heroku create` to create a Heroku application.
 
