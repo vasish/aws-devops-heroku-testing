@@ -1,6 +1,6 @@
 # AWS & DevOps: Heroku Example App
 
-This repo contains an example app for learning about to Heroku deployment process.
+This repository contains an example application for learning about Heroku's application deployment process.
 
 ## Procedure
 
@@ -23,7 +23,13 @@ This repo contains an example app for learning about to Heroku deployment proces
 
 3. Set up `.gitignore` for Node.js using the [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore) file provided by GitHub. Additional `.gitignore` templates are available in the [github/gitignore](https://github.com/github/gitignore) repository.
 
-4. Run `npm install express --save`.
+4. Run `express --view=ejs aws-devops-heroku-example` to generate an Express project.
+
+5. Update the express project. Move `./www/bin` to `./index.js` and change the line `var app = require("../app")` to `var app = require("./app")`.
+
+6. Run `heroko login` to login to Heroku and `heroku create` to create a Heroku application.
+
+7. Deploy to Heroku with `git push heroku master`.
 
 ## References
 
