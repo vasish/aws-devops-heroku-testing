@@ -1,6 +1,6 @@
 # AWS & DevOps: Heroku Example App
 
-This repository contains an example application for learning about Heroku's application deployment process.
+This repository contains an example application for learning about the Heroku application deployment process.
 
 ## Procedure
 
