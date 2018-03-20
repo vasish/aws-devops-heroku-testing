@@ -44,11 +44,13 @@ app.use(function(err, req, res, next) {
 })
 
 // Set port from environment.
-var port = parseInt(process.env.PORT, 10) || 5000
+var port = parseInt(process.env.PORT, 10) || 3000
 app.set("port", port)
 
 // Create HTTP server.
 var server = http.createServer(app)
 
 // Listen on provided port, on all network interfaces.
-server.listen(port)
+server.listen(port, function() {
+  console.log('Express started, listening on port:', port)
+})
